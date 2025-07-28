@@ -7,10 +7,12 @@ import Document from './pages/Document.jsx';
 import Pengguna from './pages/Pengguna.jsx';
 import DocumentDetail from './pages/DocumentDetail.jsx';
 import ArsipCreate from './pages/ArsipCreate.jsx';
+import Login from './pages/Login.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>
+      <Route path='/login' element={<Login />} />
       <Route path='/' element={<Dashboard />} />
       <Route path='/document' element={<Document />} />
       <Route path='/document/create' element={<ArsipCreate />} />
