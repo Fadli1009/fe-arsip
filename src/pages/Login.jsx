@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 
-import { Label } from "../components/ui/Label"
-import { Button } from "../components/ui/button"
-import { Input } from "../components/ui/Input"
-import { File } from "../lucide-react"
+import { Label } from "@/components/ui/label"
+import { Button } from "@/components/ui/Button"
+import { Input } from "@/components/ui/Input"
+import { File } from "lucide-react"
 import img from "../assets/img/loginimg.png"
 import img2 from "../assets/img/loginimg2.png"
 import { useNavigate } from "react-router"
