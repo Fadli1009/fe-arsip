@@ -28,7 +28,7 @@ const Login = () => {
         <>
             <div className="w-full bg-blue-100">
                 <div className="grid lg:grid-cols-2">
-                    <div className="pt-5 lg:pt-20 px-5 lg:px-15 bg-white">
+                    <div className="pt-5 lg:pt-20 px-5 lg:px-15 bg-white lg:m-10 rounded shadow">
                         <div className="flex mb-5 lg:mb-20 text-blue-600 font-medium">
                             <File />
                             Arsip Digital
