@@ -73,6 +73,20 @@ const Document = () => {
                                 <Label htmlFor="judul">Tags Dokumen (pisahkan dengan tanda koma (",")</Label>
                                 <Input id="picture" type="text" className="w-full" value={input} onChange={inputOnChange} onKeyDown={onKeyDown} />
                             </div>
+                            <div className="grid w-full max-w-sm items-center gap-3 mb-3">
+                                <Label htmlFor="judul">Kategori Dokumen</Label>
+                                <Select className="bg-white " onValueChange={setCategory} >
+                                    <SelectTrigger className="w-full bg-white">
+                                        <SelectValue placeholder="Semua Kategori" />
+                                    </SelectTrigger>
+                                    <SelectContent className="w-full">
+                                        <SelectItem value="legal">Legal</SelectItem>
+                                        <SelectItem value="keuangan">Keuangan</SelectItem>
+                                        <SelectItem value="all">Semua Kategori</SelectItem>
+                                    </SelectContent>
+                                </Select>
+                            </div>
+
                             <div className="flex flex-wrap w-full max-w-sm items-center gap-3 mb-3">
                                 {items.map((kata, idx) => (
                                     <Badge>
