@@ -37,15 +37,15 @@ const Login = () => {
                             <h1>{greeting}.</h1>
                         </div>
                         <form className="space-y-5">
-                            <div className="grid w-full max-w-sm items-center gap-3">
-                                <Label htmlFor="picture">Username</Label>
-                                <Input id="picture" type="text" />
+                            <div className="grid w-full items-center gap-3">
+                                <Label htmlFor="username">Username</Label>
+                                <Input id="username" type="text" className="w-full" placeholder="Username" />
                             </div>
-                            <div className="grid w-full max-w-sm items-center gap-3">
-                                <Label htmlFor="picture">Password</Label>
-                                <Input id="picture" type="password" />
+                            <div className="grid w-full items-center gap-3">
+                                <Label htmlFor="password">Password</Label>
+                                <Input id="password" type="password" placeholder="Password" />
                             </div>
-                            <Button type="button" onClick={() => navigate('/')}>Login</Button>
+                            <Button type="button" onClick={() => navigate('/')} className="w-full mt-5">Login</Button>
                         </form>
                     </div>
                     <div className="order-first lg:order-none">
